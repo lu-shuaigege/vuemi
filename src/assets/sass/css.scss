@@ -1,0 +1,35 @@
+html, body, div, h1, h2, h3, h4, h5, h6, p, img, ul, li, input, span, a, i{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background: rgb(242,242,242);
+}
+$fontSize:100;
+$appWidth:375;
+@function pxToRem($p){
+    @return($p/($appWidth/10))*1rem;
+};
+@function pxToVw($p){
+    @return(100/$appWidth*$p)*1vw
+};
+.navigation1{
+    a{
+    text-decoration: none;
+    }
+   p{
+       margin-top:5%; 
+   } 
+};
+// html{
+//     width:pxToVw(375);
+//     height:100%;
+// }
+// .homebody{
+//     img{
+//         width:100%;
+//         height:50vw;
+//     }
+// }
